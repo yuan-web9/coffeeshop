@@ -1,0 +1,68 @@
+.menu {
+    height: 100%;
+    width: 100%;
+  }
+  .my-swipe .van-swipe-item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+    background-color: #39a9ed;
+  }
+  
+  .menu-box {
+    width: 100%;
+    height: calc(~"100% - 163px");
+    .sidebar {
+      height: 100%;
+      background-color: #f7f8fa;
+      width: 85px;
+    }
+    .class-content{
+        height: 100%;
+        background: #ffffff;
+        width: calc(~'100% - 85px');
+        overflow-y: auto;
+        .item{
+            height: 100px;
+            width: 95%;
+            margin: 0 auto;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            overflow: hidden;
+            .item-img-box{
+                width: 80px;
+                height: 80px;
+                float: left;
+                margin: 10px;
+            }
+            .item-msg{
+                margin: 5px 0;
+                text-align: left;
+                float: left;
+                p{
+                  margin: 0;
+                  // margin-bottom: 5px;
+                  font-size: 12px;
+                  color:#aaa
+                }
+                .item-title{
+                  font-weight:bolder;
+                  font-size: 16px;
+                  color:#000;
+                  margin: 5px 0;
+                }
+                .item-price{
+                  font-size: 16px;
+                  font-weight: bolder;
+                  color: #ee651b;
+                  margin: 5px 0;
+                  del{
+                    font-size: 12px;
+                    color: #aaa;
+                  }
+                }
+            }
+        }
+    }
+  }

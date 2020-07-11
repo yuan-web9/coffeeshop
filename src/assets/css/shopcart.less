@@ -1,0 +1,213 @@
+.shopcart {
+    overflow-y: auto;
+    width: 100%;
+    position: relative;
+    height: calc(~'100% - 50px');
+
+    .shopcart-list {
+        width: 100%;
+        position: relative;
+        height: calc(~'100% - 120px');
+        overflow-y: auto;
+
+    }
+}
+
+.shopcart-list  .shopcart-item {
+    height: 100px;
+    width: calc(~'100% - 10px');
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+
+    
+    .list-container{
+        height: 100%;
+        width: 100%;
+        // position: relative;
+        .van-swipe-cell__wrapper{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        .delete-button {
+            height: 100px;
+        }
+    
+        // line-height: 100px;
+        .card-radio {
+            float: left;
+            padding-top: 40px;
+            margin: 0 8px;
+        }
+    
+        .card-msg {
+            .msg-img {
+                width: 90px;
+                float: left;
+                // margin: 5px;
+                margin: 5px 0;
+            }
+    
+            .msg-word {
+                height: 100%;
+                float: left;
+                // width: 150px;
+                text-align: left;
+                padding-left: 10px;
+    
+                .name-rule {
+                    height: 30px;
+                    line-height: 30px;
+    
+                    .name {
+                        font-size: 16px;
+                        color: #000;
+                    }
+    
+                    .rule {
+                        margin-left: 10px;
+                        font-size: 14px;
+                        color: #bbb;
+                    }
+                }
+    
+                .enname {
+                    font-size: 12px;
+                    height: 20px;
+                    line-height: 20px;
+                    color: #aaa
+                }
+    
+                .price {
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 16px;
+                    color: #f16431;
+                    font-weight: bold;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-top: 20px;
+                }
+            }
+    
+        }
+    
+        .card-num {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+    
+            .van-stepper__plus {
+                background-color: #6d86c4;
+            }
+    
+            .van-stepper__minus {
+                color: #8da2d9;
+                border-color: #8da2d9;
+            }
+        }
+    }
+}
+
+.total-submit {
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: calc(~'100% - 20px');
+    padding: 10px;
+
+    .allSelect {
+        float: left;
+        height: 40px;
+        line-height: 5px;
+
+        .radio-btn {
+            margin: 10px 5px;
+            float: left;
+        }
+
+        span {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            margin-top: 0;
+        }
+    }
+
+    .total {
+        position: absolute;
+        right: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        margin-left: 70px;
+
+        .total-price {
+            color: #6170ad;
+
+            &>span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .submit-btn {
+        float: right;
+        height: 30px;
+        line-height: 30px;
+
+        .van-button--info {
+            width: 100px;
+        }
+
+        .van-button {
+            height: 40px;
+        }
+    }
+}
+
+.managing-box{
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: calc(~'100% - 20px');
+    padding: 10px;
+
+    .allSelect {
+        float: left;
+        height: 40px;
+        line-height: 5px;
+
+        .radio-btn {
+            margin: 10px 5px;
+            float: left;
+        }
+
+        span {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            margin-top: 0;
+        }
+    }
+
+    .del-btn {
+        float: right;
+        height: 30px;
+        line-height: 30px;
+
+        .van-button--info {
+            width: 100px;
+        }
+
+        .van-button {
+            height: 40px;
+        }
+    }
+}

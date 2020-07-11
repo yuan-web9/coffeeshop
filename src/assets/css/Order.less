@@ -1,0 +1,88 @@
+.order-content{
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    top: 45px;
+}
+
+.order-container{
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+// 全部标签下,循环产生的订单卡片
+.order-container .order-item{
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    
+    // 订单卡片顶部
+    .item-header{
+        text-align: left;
+        padding:0 10px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+        .header-right{
+            .item-status{
+                height: 40px;
+                line-height: 40px;
+                float: left;
+            }
+            .del-icon{
+                float: left;
+                margin-left: 10px;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    // 订单卡片主要商品内容
+    .item-main .product-item{
+        /deep/ .van-card{
+            background-color: #fff;
+            text-align: left;
+        }
+        /deep/ .van-card__title {
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        .card-enname,
+        .card-rule {
+            color: #a8a9b6;
+            margin: 5px 0;
+        }
+    }
+
+    // 订单卡片底部部分
+    .item-footer{
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        padding: 0 10px;
+        color:#bbb;
+        .order-total-box{
+            float: right;
+            .order-count{
+                padding: 0 4px;
+            }
+            .order-total{
+                font-size: 18px;
+                color:#000;
+                font-weight: bold;
+                margin-left: 6px;
+            }
+
+        }
+    }
+}
+.receipt{
+    color:#1989fa
+}

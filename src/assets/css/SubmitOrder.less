@@ -1,0 +1,99 @@
+.submitOrder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #f7f7f7;
+
+    .setAddress-box {
+        width: 95%;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 40px;
+        line-height: 40px;
+        margin: 10px auto;
+
+        .setAddrWord {
+            display: block;
+            height: 100%;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .van-action-sheet__content {
+            position: relative;
+
+        }
+
+        .van-action-sheet__content .addressList .address-item .address-msg {
+            text-align: left;
+            width: 90%;
+            margin: 0 20px;
+            padding: 5px 0;
+
+            &>div {
+                height: 25px;
+                line-height: 25px;
+            }
+
+            .msg-top {
+                font-size: 16px;
+
+                .top-name {
+                    margin-right: 10px;
+                }
+            }
+
+            .msg-bottom {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .product-order {
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 0 auto;
+        width: 95%;
+
+        /deep/ .van-card {
+            background-color: #fff;
+            text-align: left;
+        }
+
+        /deep/ .van-card__title {
+            font-size: 16px;
+            font-weight: bolder;
+        }
+
+        .pOrder-item .card-enname,
+        .pOrder-item .card-rule {
+            color: #a8a9b6;
+            margin: 5px 0;
+        }
+
+        .pOrder-total {
+            height: 40px;
+            line-height: 40px;
+            text-align: right;
+            padding: 0 16px;
+            color: #aeadb2;
+
+            .total-word .word-price {
+                font-size: 18px;
+                font-weight: bold;
+                margin-left: 10px;
+                color: #000;
+            }
+        }
+    }
+
+    .settlement {
+
+        /deep/ .van-button--danger {
+            background: #1989fa;
+
+        }
+    }
+}
